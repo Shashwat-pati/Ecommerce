@@ -51,14 +51,14 @@ const Login = () => {
                         <div className="my-[2rem] ">
                             <label
                                 htmlFor="email"
-                                className="block text-sm font-medium text-black"
+                                className="block text-sm font-medium text-white"
                             >
                                 Email Address
                             </label>
                             <input
                                 type="email"
                                 id="email"
-                                className="mt-1 p-2 border border-green-500 border-rounded"
+                                className="mt-1 p-2 border border-green-500 rounded"
                                 value={email}
                                 onChange={(e) => setEmail(e.target.value)}
                             />
@@ -67,14 +67,14 @@ const Login = () => {
                         <div className="my-[2rem] ">
                             <label
                                 htmlFor="password"
-                                className="block text-sm font-medium text-black"
+                                className="block text-sm font-medium text-white"
                             >
                                 Password
                             </label>
                             <input
                                 type="password"
                                 id="password"
-                                className="mt-1 p-2 border border-green-500 border-rounded"
+                                className="mt-1 p-2 border border-green-500 rounded"
                                 value={password}
                                 onChange={(e) => setPassword(e.target.value)}
                             />
@@ -92,7 +92,7 @@ const Login = () => {
                     </form>
 
                     <div className="mt-4">
-                        <p className="text-black">
+                        <p className="text-white">
                             New Customer?{" "}
                             <Link
                                 to={

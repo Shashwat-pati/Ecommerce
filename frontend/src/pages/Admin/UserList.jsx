@@ -10,7 +10,7 @@ import {
 import { toast } from "react-toastify";
 
 // ⚠️⚠️⚠️ don't forget this ⚠️⚠️⚠️⚠️
-// import AdminMenu from "./AdminMenu";
+import AdminMenu from "./AdminMenu";
 
 const UserList = () => {
     const { data: users, refetch, isLoading, error } = useGetUsersQuery();
@@ -60,7 +60,9 @@ const UserList = () => {
 
     return (
         <div className="p-4">
-            <h1 className="text-2xl font-semibold mb-4">Users</h1>
+            <h1 className="text-2xl font-semibold mb-8 justify-center text-center underline">
+                USERS
+            </h1>
             {isLoading ? (
                 <Loader />
             ) : error ? (
@@ -80,7 +82,6 @@ const UserList = () => {
                                 <th className="px-4 py-2"></th>
                             </tr>
                         </thead>
-
                         <tbody>
                             {users.map((user) => (
                                 <tr key={user._id}>
